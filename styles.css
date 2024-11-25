@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text color for readability */
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c; /* Darker background for the header */
+    color: #ffab00; /* Bright yellow for header text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffab00; /* Bright yellow for nav links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4; /* Teal color on hover */
+}
+
+/* Main Content Section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #1f1f1f; /* Dark background for the about section */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us h2, .about-us h3 {
+    color: #ffab00; /* Bright yellow for headings */
+    margin-bottom: 1rem;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0; /* Light gray text for paragraphs */
+    line-height: 1.8;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin: 10px 0;
+}
+
+.about-us ul li a {
+    color: #00bcd4; /* Teal color for the links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-us ul li a:hover {
+    color: #ffab00; /* Yellow on hover */
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    background-color: #1c1c1c; /* Dark footer */
+    color: #e0e0e0; /* Light text color for footer */
+    padding: 1rem;
+    position: relative; /* Changed from fixed to relative */
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* Adjusting the layout for smaller screens */
+    .about-us {
+        padding: 1.5rem;
+    }
+
+    .about-us h2, .about-us h3 {
+        font-size: 1.5rem; /* Smaller headings */
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .about-us ul li a {
+        font-size: 1rem; /* Adjust link size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile screens */
+    .about-us {
+        padding: 1rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.4rem; /* Smaller h2 */
+    }
+
+    .about-us h3 {
+        font-size: 1.3rem; /* Smaller h3 */
+    }
+
+    .about-us p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}

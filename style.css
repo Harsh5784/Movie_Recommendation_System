@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text color for readability */
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c; /* Darker background for the header */
+    color: #ffab00; /* Bright yellow for header text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffab00; /* Bright yellow for nav links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4; /* Teal color on hover */
+}
+
+/* Main Section */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Post Style */
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f; /* Dark background for posts */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #00bcd4; /* Teal border under the image */
+}
+
+.post-content {
+    padding: 1rem;
+}
+
+.post-content h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ffab00; /* Bright yellow for the title */
+}
+
+.post-content .date {
+    color: #757575; /* Gray text for the date */
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-content .rating {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffab00; /* Yellow for ratings */
+}
+
+.post-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0; /* Light gray text for review */
+}
+
+.post-content a {
+    color: #00bcd4; /* Teal color for the "Read Full Review" link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+    color: #ffab00; /* Change to yellow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1c1c1c; /* Dark footer */
+    color: #e0e0e0; /* Light text color for footer */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

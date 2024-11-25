@@ -1,0 +1,155 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text color for readability */
+}
+
+/* Header */
+header {
+    background-color: #1c1c1c; /* Darker background for the header */
+    color: #ffab00; /* Bright yellow for header text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #ffab00; /* Bright yellow for nav links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4; /* Teal color on hover */
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr; /* One column for the full-width layout */
+    gap: 20px;
+    width: 100%;
+}
+
+/* About Us and Contact Section */
+.about-us, .contact {
+    background-color: #1f1f1f; /* Dark background for sections */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Make sure these sections take up the full width */
+    margin: 0 auto; /* Center the section in the available space */
+}
+
+.about-us h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffab00; /* Bright yellow for headings */
+}
+
+.about-us h3, .contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffab00; /* Bright yellow for subheadings */
+}
+
+.about-us p, .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0; /* Light gray text for paragraphs */
+    line-height: 1.8;
+}
+
+/* Contact Section Specific */
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    margin: 10px 0;
+}
+
+.contact ul li a {
+    color: #00bcd4; /* Teal color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact ul li a:hover {
+    color: #ffab00; /* Yellow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1c1c1c; /* Dark footer */
+    color: #e0e0e0; /* Light text color for footer */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+        gap: 10px;
+    }
+
+    .about-us h2, .contact h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-us p, .contact p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .about-us h2, .contact h2 {
+        font-size: 1.4rem;
+    }
+
+    .about-us p, .contact p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
